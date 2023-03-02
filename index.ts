@@ -1,3 +1,5 @@
+import { Vehicle } from "./Vehicle";
+
 const app = document.getElementById("app");
 // 2. Create a new <p></p> element programmatically
 const p = document.createElement("p");
@@ -5,3 +7,5 @@ const p = document.createElement("p");
 p.textContent = "Hello, World!";
 // 4. Append the p element to the div element
 app?.appendChild(p);
+const demoVehicle = new Vehicle(5);
+p.innerText = demoVehicle.getId();
